@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+ 
+</head>
+<body>
+    <div class = question>
+        <button onclick="test()">문제 4</button>
+        <p id="test_obj"></p>
+         
+        <script>
+            var i = 0;
+            var txt = '마지막 문제다. 내가(박이한) 쓰는 코딩 언어는? 1. JS 2. Python 3. C++ 4. C 5. PHP';
+            var speed = 100;
+         
+            function test() {
+                if (i < txt.length) {
+                    document.getElementById("test_obj").innerHTML += txt.charAt(i); //    숨겨진 코드
+                    i++;
+                    setTimeout(test, speed);
+                }
+            }
+        </script>
+    </div>
+</body>
